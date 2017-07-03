@@ -74,7 +74,7 @@ img, video {
   .desktop {
     display: flex;
     margin-left: 24px;
-    padding-left: 0;
+    padding: 0 8;
     width: 100%;
   }
   .logo {
@@ -90,8 +90,8 @@ img, video {
   .logo span {
     font-weight: bold;
   }
-  nav li:nth-child(n1) {
-    margin-right: 16px;
+  nav li {
+    margin: 0px 8px;
   }
   nav li:last-child {
     margin-right: 24px;
@@ -240,7 +240,7 @@ main {
 
 @media only screen and (min-width: 550px) {
   .featured-courses {
-    background: lightgrey;
+    background: #d3d3d3;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -308,7 +308,7 @@ main {
     flex-direction: column;
   }
   .exhibit-card:first-child {
-    background: lightgrey;
+    background: #d3d3d3;
   }
   .exhibit-vid {
     margin-right: 24px;
