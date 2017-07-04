@@ -1,5 +1,8 @@
+/*General Rules */
+
 html {
   font-size: 16px;
+  font-family: Verdana, sans-serif;
 }
 body {
   margin: 0;
@@ -34,6 +37,7 @@ button {
   width: 100%;
   padding: 8px 0;
   color: white;
+  font-size: 18px;
 }
 
 .desktop {
@@ -56,10 +60,11 @@ button {
 nav li {
   list-style: none;
   display: flex;
+  font-size: 24px;
 }
 
 nav li > a {
-  color: black;
+  color: #545454;
 }
 
 img, video {
@@ -107,11 +112,14 @@ main {
   display: none;
 }
 
+.practice p {
+  font-size: 24px;
+  color: #939393;
+}
+
 .banner {
-  width: 100%;
-  height: 180px;
   background: url('../images/banner.jpg');
-  background-size: cover;
+  width: 60%;
 }
 
 .banner img {
@@ -121,6 +129,8 @@ main {
 .start-here {
   color: #545454;
   padding: 32px 16px;
+  max-width: 423px;
+  margin: 16px;
 }
 
 @media only screen and (min-width: 800px) {
@@ -131,10 +141,11 @@ main {
     background: #d3d3d3;
   }
   .banner {
-    background: none;
-    height: auto;
+    display: flex;
+    flex-direction: column;
     width: 60%;
-    padding: 32px 24px;
+    margin: 32px 24px;
+    background: none;
   }
   .banner img {
     display: flex;
@@ -143,10 +154,11 @@ main {
     max-width: 423px;
   }
   .start-here h1 {
-    font-size: 4vw;
+    font-size: 80px;
   }
   .start-here h2 {
     margin-bottom: 32px;
+    line-height: normal;
   }
 }
 
@@ -161,6 +173,7 @@ main {
 
 .information-text h3, .information-text p {
   margin-bottom: 8px;
+  color: #545454;
 }
 
 .info-thumb {
@@ -184,21 +197,28 @@ main {
   .practice img {
     min-height: 350px;
   }
-  .practice h2 {
+  .practice h1 {
+    align: left;
     margin-top: 32px;
     margin-bottom: 24px;
   }
   .info-thumb {
     height: auto;
   }
+
   .orientation, .campus, .guest-lectures {
     display: flex;
     flex-direction: row;
     align-items: center;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid #d3d3d3;
     padding: 16px;
     max-width: 423px;
   }
+
+  .guest-lectures {
+    background: #d3d3d3;
+  }
+
   .orientation img, .campus img, .guest-lectures img {
     width: 35%;
   }
@@ -209,8 +229,9 @@ main {
     border-top: none;
   }
   .information-features {
-    border-left: 1px solid grey;
+    border-left: 1px solid #d3d3d3;
     padding-bottom: 32px;
+    display: block;
   }
   blockquote > footer {
     margin-top: 32px;
@@ -218,22 +239,29 @@ main {
 }
 
 .featured-courses {
-  padding: 32px 16px;
+  padding: 16px 16px;
+  border-bottom: 1px solid #d3d3d3;
 }
 
-.featured-courses h2, .exhibition-featured h2 {
+.featured-courses h1, .exhibition-featured h1 {
   text-align: center;
   width: 100%;
   padding-bottom: 16px;
+  padding-top: 32px;
+  color: #545454;
+}
+
+.urban {
+  text-align: left;
 }
 
 .featured-courses img, .featured-courses .course-info p {
   display: none;
 }
 
-.course-info > h3 {
+.course-info > h2 {
   padding: 16px;
-  background: grey;
+  background: white;
   margin-bottom: 8px;
 }
 
@@ -291,6 +319,18 @@ main {
     padding-left: 24px;
     margin-bottom: 32px;
   }
+
+  .exhibition-featured-info p {
+    font-size: 24px;
+    color: #939393;
+  }
+
+  .exhibition-featured-info h1 {
+    text-align: left;
+    margin-top: 32px;
+    margin-bottom: 16px;
+  }
+
   .exhibit-card {
     display: flex;
     flex-direction: row;
@@ -311,8 +351,10 @@ main {
     background: #d3d3d3;
   }
   .exhibit-vid {
-    margin-right: 24px;
+    display: flex;
+    flex-direction: column;
     width: 60%;
+    margin: 0px 24px;
   }
   .exhibit-vid h3, .exhibit-vid p {
     display: flex;
@@ -326,12 +368,17 @@ footer > nav {
   display: none;
 }
 
+.bottom{
+  border-top: 1px solid #d3d3d3;
+}
+
 footer {
   padding: 32px 0;
 }
 
 .copyright {
   margin-left: 24px;
+  font-size: 24px;
 }
 
 @media only screen and (min-width: 400px) {
@@ -341,13 +388,16 @@ footer {
     flex-direction: row;
     justify-content: space-between;
   }
+
   footer > nav {
     display: flex;
   }
+
   footer > nav ul {
     display: flex;
     flex-direction: row;
   }
+
   footer > nav ul li:first-child {
     margin-right: 16px;
   }
